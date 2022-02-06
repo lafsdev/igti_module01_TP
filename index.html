@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/resources/css/reset.css" rel="stylesheet" />
+    <link href="/resources/css/styles.css" rel="stylesheet" />
+    <script type="text/javascript" src="/resources/js/utils.js"></script>
+    <title>Bootcamp CI&T Next Gen Diversidade</title>
+  </head>
+  <body onload="javascript:initializeFields()">
+    <main>
+      <form action="#" method="post">
+        <img src="/resources/images/logo.svg" alt="CI&T logo" />
+        <h1 class="title">Simulação de Financiamento</h1>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="ivalor">Valor:</label>
+            <input id="ivalor" type="number" min="0"/>
+          </div>
+          <div class="form-group">
+            <label for="iprazoanos">Prazo (anos):</label>
+            <input id="iprazoanos" type="number" min="0" />
+          </div>
+          <div class="form-group">
+            <label for="ijuros">Juros ao ano:</label>
+            <input id="ijuros" type="number" step="0.01" min="0"/>
+          </div>
+        </div>
+        </div>
+        <button class="button" style="vertical-align:middle" id="button" onclick="calcularParcela(event)"><span>Simular </span></button>
+        <h1 class="title">Resultado</h1>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="iprazomeses">Prazo (meses):</label>
+            <input id="iprazomeses" type="text" readonly/>
+          </div>
+          <div class="form-group">
+            <label for="ijurosmes">Juros ao mês:</label>
+            <input id="ijurosmes" type="text"  readonly />
+          </div>
+          <div class="form-group">
+            <label for="ijurosacumulados">Juros acumulados:</label>
+            <input id="ijurosacumulados" type="text" readonly/>
+          </div>
+        </div>
+        <div id="table"></div>
+      </form>
+    </main>
+  </body>
+</html>

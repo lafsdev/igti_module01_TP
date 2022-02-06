@@ -1,0 +1,99 @@
+body {
+  background: #384047;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+form {
+  background: #fff;
+  padding: 4em 4em 2em;
+  max-width: 600px;
+  margin: 50px auto 0;
+  box-shadow: 0 0 1em #222;
+  border-radius: 2px;
+}
+
+.title {
+  margin: 15px 0 50px 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  border-bottom: solid 1px #e5e5e5;
+  color: rgb(201, 49, 49);
+}
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+input {
+  margin: 5px 0 10px 0;
+}
+.form-row {
+  display: flex;
+}
+
+.form-group {
+  padding: 5px;
+  width: 50%;
+}
+
+.form-group input {
+  width: 100%;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgb(201, 49, 49);
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 18px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+th,
+td {
+  padding: 10px 20px;
+  border: 1px solid #000;
+}
+tr:hover {
+  background-color: rgb(201, 49, 49);
+  color: #e5e5e5;
+}
